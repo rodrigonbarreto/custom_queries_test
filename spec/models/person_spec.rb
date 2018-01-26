@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe Person, type: :model do
 
-
   describe ".in_region" do
     it "returns people in the named region" do
 
@@ -54,8 +53,7 @@ RSpec.describe Person, type: :model do
     end
   end
 
-
-  ##HAS MANY
+  # HAS MANY
 
   describe ".order_by_location_name" do
     it "groups people by location" do
@@ -123,11 +121,9 @@ RSpec.describe Person, type: :model do
     end
   end
 
-  ## END HAS MANY
-  #
+  # END HAS MANY
 
-  ##START CUSTOM
-
+  # START CUSTOM
   describe "#without_remote_manager" do
     it "returns people who have no manager or whose manager is local" do
       #pending "Implement without_remote_manager to make this spec pass"
@@ -303,6 +299,4 @@ RSpec.describe Person, type: :model do
       ))
     end
   end
-  # END
-
 end
