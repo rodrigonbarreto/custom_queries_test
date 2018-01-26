@@ -18,11 +18,3 @@
 
 .byebug_history
 .idea/*
-
-    create_table :people, force: true do |table|
-      table.string :name, null: false
-      table.integer :role_id, null: false
-      table.integer :location_id
-      table.integer :manager_id
-      table.integer :salary, null: false
-    end
