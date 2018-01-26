@@ -4,6 +4,6 @@ FactoryBot.define do
     name Faker::Name.name
     role
     salary 0
-
   end
 end
+
