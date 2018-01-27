@@ -44,6 +44,7 @@ group :development, :test do
   gem "factory_bot_rails", "~> 4.0"
   gem 'faker'
   gem "rubocop-rails"
+  gem 'pry-rails'
 end
 
 group :development do

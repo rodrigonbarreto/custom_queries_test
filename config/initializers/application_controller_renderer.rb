@@ -6,3 +6,7 @@
 #     https: false
 #   )
 # end
+
+# Load custom Folders in app
+Dir[Rails.root.join('app/repository/**/*.rb')].each { |f| require f }
+Dir[Rails.root.join('app/services/**/*.rb')].each { |f| require f }
